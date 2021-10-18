@@ -1,0 +1,36 @@
+.nav {background-color: dimgrey;}
+.drop {float: left;}
+.drop, .nav{overflow: hidden;}
+.nav a, .content a{text-align: justify;}
+.nav a,.drop .dropdown{font-size: 16px;} 
+.nav a,.drop .dropdown{padding:12px 16px}
+.nav a,.drop .dropdown{color: white;}  
+.nav a{float: left;text-decoration:none;}
+ 
+.content{
+  display:none;
+  background-color:#f9f9f9;
+  position:absolute;
+  min-width:100px;
+  max-width:200px;
+  box-shadow:0px 8px 16px 0px darkgrey;
+}
+
+.content a{
+  display:block;
+  float:none;
+  color:darkgrey;
+}
+
+.drop .dropdown{
+  background-color:inherit;
+  border:none;
+  outline:none;
+}
+
+.nav a:hover, .drop:hover .dropdown{
+background-color:darkgrey;
+}
+
+.content a:hover{background-color:#ddd;}
+.drop:hover .content{display:block;}
